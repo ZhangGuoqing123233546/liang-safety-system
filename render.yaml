@@ -2,6 +2,7 @@ services:
   - type: web
     name: liang-safety-system
     runtime: node
+    plan: free
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -12,5 +13,6 @@ services:
 
 databases:
   - name: liang-safety-db
+    plan: free
     databaseName: liang_safety
     user: liang_safety_user
